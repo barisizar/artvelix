@@ -3,6 +3,9 @@
   "account_id": "e579b045ae681795b35fdf693e161e7d",
   "compatibility_date": "2026-11-05",
   "workers_dev": true,
+  "routes": [
+    { "pattern": "www.artvelix.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./site",
     "html_handling": "auto-trailing-slash",
