@@ -1,5 +1,6 @@
 *
 !.gitignore
+!wrangler.jsonc
 !.github/
 !.github/**
 !site/
