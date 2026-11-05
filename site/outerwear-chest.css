@@ -1,0 +1,8 @@
+/* Small chest print collection; native product images remain uncropped. */
+:root{--bg:#f5f2ee;--ink:#31352f;--muted:#73756c;--line:#dcded5;--rose:#5b6a55;--panel:#e7e7dd;--yellow:#e0e4d4}
+.hero-wait{background:#e1e5d6;color:#4d6048}.hero-wait:before{border-color:#adbba0;border-radius:48% 48% 44% 44%;transform:rotate(-10deg)}.ribbon{color:#4c6044}.group-tab:hover:not(.active){background:#e3e7d9}.color-dots i:nth-child(1){background:#31352f}.color-dots i:nth-child(2){background:#a9b4a1}.color-dots i:nth-child(3){background:#cbb9a2}.toolbar{gap:15px}.toolbar select{max-width:230px}.card-colors{display:flex;gap:8px;align-items:center;font-size:10px;color:var(--muted);margin-top:6px}.card-colors>span+span:not(:empty):before{content:"·";margin-right:8px}.hero-photo figcaption{background:#f8f8f1ed}.status{background:#e2e7d8}
+@media(min-width:1000px){.toolbar .search{min-width:250px;flex:2}.toolbar select{flex:1}}
+@media(max-width:600px){.toolbar select{flex-basis:42%;max-width:100%}.card-colors{display:block;font-size:9px}.card-colors>span{display:block}.card-colors>span+span:not(:empty):before{content:none}.card-colors>span+span{margin-top:2px}}
+
+.detail-photo{position:relative;overflow:hidden}.detail-photo>img{transform-origin:61% 30%;transition:transform .22s ease}.detail-photo.is-zoomed>img{transform:scale(2.8)}.view-switch{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.view-switch .pill{font-size:10px;padding:9px 13px}.view-switch [aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.detail-photo>img{transition:none}}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baş üstünde sanat — Şapka Koleksiyonu | Artvelix</title>
+  <meta name="description" content="Kendi Midjourney resimleriniz ve Printify şapka modelleriyle hazırlanmış 100 farklı tasarım.">
+  <link rel="stylesheet" href="hats.css?v=1">
+  <script src="hats.js?v=1" defer></script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/artvelix/favicon.svg">
+  <link rel="stylesheet" href="assets/artvelix/brand.css?v=artvelix-1">
+  <meta name="theme-color" content="#3032e8">
+  <meta name="application-name" content="Artvelix">
+  <meta property="og:site_name" content="Artvelix">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Baş üstünde sanat — Şapka Koleksiyonu | Artvelix">
+  <meta property="og:description" content="Kendi Midjourney resimleriniz ve Printify şapka modelleriyle hazırlanmış 100 farklı tasarım.">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand artvelix-brand" href="index.html" aria-label="Artvelix — Ana sayfa"><svg class="av-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M9 29 18.2 10h4L31 29h-5.6l-1.5-3.5h-9.4L13 29H9Zm7.3-7.7h5.8l-2.9-6.7-2.9 6.7Z" fill="#faf8f2"/><circle cx="30" cy="10" r="3" fill="#d8ee76"/></svg><span class="av-type"><span class="av-name">artvelix<span class="av-dot">.</span></span><small class="av-tagline">SANATLA, HER GÜN.</small></span></a>
+    <nav aria-label="Ana gezinme">
+      <a href="all-products.html#collection">Tüm ürünler ↗</a>
+      <a href="#collection" aria-current="page">Şapka koleksiyonu</a>
+      <button id="favorites" class="pill" aria-pressed="false">Beğendiklerim <span id="fav-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow"><span class="little-sun" aria-hidden="true">✳</span> SANAT, GÜNLÜK HAYATA KARIŞIR</p>
+        <h1 id="page-title">Baş üstünde<br><em>sanat.</em></h1>
+        <p class="lead">Kendi Midjourney resimleriniz, farklı şapka biçimlerinde yeni bir ifade buluyor. Renkler, dokular ve her güne eşlik edecek 100 ayrı tasarım.</p>
+        <a class="primary" href="#collection">Şapkaları keşfet <span aria-hidden="true">↘</span></a>
+        <div class="stats" aria-label="Seçki durumu">
+          <div><strong><span id="ready-total">0</span><small> / <span id="target-total">100</span></small></strong><span>Hazır ürün önizlemesi</span></div>
+          <div><strong id="model-total">0</strong><span>Ürün modeli</span></div>
+          <div class="color-note"><span class="color-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>Kendine ait bir ifade.</span></div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <div class="hero-wait" id="hero-wait"><span>ŞAPKA KOLEKSİYONU</span><p>Farklı biçimler.<br><em>Özgün renkler.</em></p><span class="waiting-caption">İlk ürün görselleri hazırlanıyor.</span></div>
+        <img id="hero-image" alt="" width="1254" height="1254" hidden>
+        <figcaption id="hero-caption" hidden><span id="hero-title"></span><span>Ürün önizlemesi</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="ribbon"><span><span aria-hidden="true">✳</span> Seç · Tak · Kendin ol</span><span id="progress" role="status">Seçki yükleniyor…</span></div>
+
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="section-head">
+        <div><p class="eyebrow">KENDİ RESİMLERİNDEN, HER GÜNE</p><h2 id="collection-title">Bir şapka, ayrı bir dünya.</h2></div>
+        <p>Farklı modeller, birbirinden ayrı tasarımlar.<br>Kalbe dokun, beğendiklerini bir araya getir.</p>
+      </div>
+      <div class="group-tabs" role="group" aria-label="Ürün grubu">
+        <button class="group-tab active" data-group="" aria-pressed="true"><strong>Tüm şapkalar</strong><span>0 / 100 hazır</span></button>
+        <button class="group-tab" data-group="cap" aria-pressed="false"><strong>Siperlikli şapkalar</strong><span>Hazırlanıyor</span></button>
+        <button class="group-tab" data-group="bucket" aria-pressed="false"><strong>Kova şapkalar</strong><span>Hazırlanıyor</span></button>
+        <button class="group-tab" data-group="knit" aria-pressed="false"><strong>Bereler</strong><span>Hazırlanıyor</span></button>
+        <button class="group-tab" data-group="visor" aria-pressed="false"><strong>Vizörler</strong><span>Hazırlanıyor</span></button>
+      </div>
+      <div class="toolbar">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Bir renk, tema veya model ara…" aria-label="Tasarım, tema veya ürün ara"></label>
+        <select id="model" aria-label="Ürün modeli seç"><option value="">Tüm ürün modelleri</option></select>
+        <select id="theme" aria-label="Tema seç"><option value="">Tüm temalar</option></select>
+        <button id="reset" hidden>Filtreleri temizle</button>
+      </div>
+      <div class="result"><span id="result-count" aria-live="polite">Tasarımlar yükleniyor…</span><span id="selection-note">ŞAPKA KOLEKSİYONU</span></div>
+      <div id="grid" class="grid" aria-busy="true"></div>
+      <div class="empty" id="empty" hidden><span class="empty-mark" aria-hidden="true">✳</span><h3 id="empty-title">Şapkalar hazırlanıyor.</h3><p id="empty-copy">Hazır olan ürün görselleri burada kendiliğinden görünecek.</p></div>
+      <div class="load-actions"><button id="more" class="pill" hidden>24 ürün daha göster +</button><button id="show-all" class="pill" hidden>Tümünü göster</button></div>
+      <p id="shown" class="shown" aria-live="polite"></p>
+      <p class="note">Kendi Midjourney resimleriniz ve Printify ürün modelleri temel alınarak hazırlanmış AI ürün önizlemeleri. Görseller fiziksel üretim fotoğrafı veya baskı dosyası değildir. Ürünler Printify’a yüklenmedi; satışa sunulmadı.</p>
+    </section>
+  </main>
+
+  <footer><span>ARTVELIX / ŞAPKA SEÇKİSİ</span><a href="all-products.html#collection">Tüm ürünleri incele ↗</a><a href="#">Başa dön ↑</a></footer>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <button class="close" id="close" aria-label="Ürün detayını kapat">×</button>
+    <div class="detail-photo"><img id="detail-image" alt="" width="1254" height="1254"></div>
+    <div class="detail-copy">
+      <p class="eyebrow" id="detail-id"></p>
+      <h2 id="detail-title"></h2>
+      <p class="detail-theme" id="detail-theme"></p>
+      <p id="detail-description"></p>
+      <dl class="design-facts" id="detail-facts"></dl>
+      <div class="product-reference" id="product-reference" hidden><span>PRINTIFY MODELİ</span><p id="detail-product-name"></p><a id="printify-link" target="_blank" rel="noopener noreferrer">Printify'da modeli incele ↗</a></div>
+      <span class="status">AI ürün önizlemesi · Mağazaya yüklenmedi</span>
+      <button id="detail-fav" class="primary" aria-pressed="false">Bu tasarımı beğendim ♡</button>
+      <a class="download" id="download" download>Ürün görselini indir ↓</a>
+      <p class="review-note">Resmin ürün üzerindeki yerleşimini, renklerini ve model seçimini incelemek için hazırlanmıştır. Baskıya hazırlama, beden ve üretici seçeneklerini doğrulama sonraki adımdır.</p>
+      <div class="detail-nav"><button id="prev" aria-label="Önceki tasarım">←</button><span id="position" aria-live="polite"></span><button id="next" aria-label="Sonraki tasarım">→</button></div>
+    </div>
+  </dialog>
+<p class="web-preview-note" style="margin:0;padding:18px 24px;text-align:center;font:12px/1.6 sans-serif;color:#686661;background:#f5f3ed">Artvelix · Tasarım galerisi. Görseller ve indirilebilir dosyalar web önizlemeleridir; baskı masterı değildir. Sipariş ve ödeme alınmaz.</p>
+</body>
+</html>

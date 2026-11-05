@@ -1,0 +1,28 @@
+/* Artvelix identity, scoped to preserve collection layouts and interactions. */
+@font-face{font-family:Artvelix;src:url('../archivo.ttf') format('truetype');font-weight:100 900;font-display:swap}
+:root{--av-blue:#3032e8;--av-paper:#faf8f2;--av-ink:#22231f;--av-lime:#d8ee76}
+a.artvelix-brand{display:inline-flex!important;align-items:center;justify-content:flex-start;gap:10px;font-family:Artvelix,Arial,sans-serif!important;font-size:initial!important;letter-spacing:0!important;line-height:1!important;white-space:nowrap;flex:0 0 auto;color:var(--av-ink);text-decoration:none;border:0;padding:0;min-width:174px}
+a.artvelix-brand .av-mark{width:37px;height:37px;display:block;flex:0 0 37px;color:var(--av-blue)}
+a.artvelix-brand .av-type{display:flex;flex-direction:column;gap:5px;align-items:flex-start}
+a.artvelix-brand .av-name{font:740 31px/.9 Artvelix,Arial,sans-serif!important;letter-spacing:-1.55px!important;color:inherit;display:block;text-transform:none!important}
+a.artvelix-brand .av-dot{color:var(--av-blue)}
+a.artvelix-brand small.av-tagline{font:500 7.3px/1 Artvelix,Arial,sans-serif!important;letter-spacing:2px!important;color:inherit;display:block;margin:0!important;opacity:.7}
+a.artvelix-brand:hover .av-mark{transform:rotate(-5deg)}.av-mark{transition:transform .2s ease}
+.artvelix-home{--paper:var(--av-paper);--blue:var(--av-blue);--lime:var(--av-lime);--ink:var(--av-ink)}
+.artvelix-home .announcement{background:var(--av-blue);font-size:10px;letter-spacing:1.8px;padding-block:11px}.artvelix-home .prototype-label{color:#e9e9ff;font-size:9px}
+.artvelix-home .header{height:100px}.artvelix-home .header nav{gap:25px;font-size:13px}
+.artvelix-home .hero{padding-top:42px;padding-bottom:45px}.artvelix-home .hero h1{font-size:clamp(56px,6.65vw,104px);line-height:.99;letter-spacing:-5px}.artvelix-home .hero h1>span{letter-spacing:-4.4px}
+.artvelix-home .hero-description{font-size:16px;line-height:1.75;max-width:440px}.artvelix-home .hero-note{margin-top:29px;line-height:1.6}
+.artvelix-home .hero-art{border-radius:3px;min-height:530px}.artvelix-home .hero-art>img{border-radius:3px}
+.artvelix-home .art-stamp{right:-12px;top:25px;box-shadow:none;border:1px solid var(--av-ink);transform:rotate(9deg)}.artvelix-home .art-stamp span{font-size:8px;letter-spacing:.8px}.artvelix-home .art-caption{background:rgba(250,248,242,.97)}
+.artvelix-home .button.dark{border-radius:2px}.artvelix-home .values-strip{font-size:12px;letter-spacing:1.5px;padding-block:18px}.artvelix-home .section h2{font-weight:520}
+.artvelix-home .scope-note{max-width:740px;line-height:1.7}.artvelix-home .shops-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.artvelix-home .shop-image{aspect-ratio:1.14}
+.artvelix-home .digital-section{background:var(--av-blue)}
+.artvelix-home footer{background:var(--av-ink);color:var(--av-paper)}.artvelix-home .footer-bottom{color:#d1d0c5;border-color:#484941}
+.artvelix-home .footer-top .artvelix-brand{color:var(--av-paper)}.artvelix-home .footer-top .av-mark,.artvelix-home .footer-top .av-dot{color:var(--av-lime)}.artvelix-home .footer-top .av-mark path{fill:var(--av-ink)}.artvelix-home .footer-top .av-mark circle{fill:var(--av-blue)}
+.artvelix-home #detail-price[hidden]{display:none}
+.artvelix-collection-bar{font-family:Artvelix,Arial,sans-serif!important;background:var(--av-paper)!important;color:var(--av-ink)!important;border-bottom:1px solid #deded1}.artvelix-collection-bar a{color:var(--av-blue)!important}
+@media(max-width:1100px){.artvelix-home .header{gap:20px;padding-inline:32px}.artvelix-home .header nav{gap:16px;font-size:12px}.artvelix-home .hero h1{font-size:clamp(54px,7.4vw,84px)}.artvelix-home .hero-art{min-height:470px}}
+@media(max-width:800px){a.artvelix-brand{min-width:160px}a.artvelix-brand .av-mark{width:33px;height:33px;flex-basis:33px}a.artvelix-brand .av-name{font-size:28px!important}.artvelix-home .header{height:auto;min-height:96px;padding:18px 24px;gap:18px}.artvelix-home .header nav{gap:22px}.artvelix-home .hero{padding-top:32px;padding-bottom:32px}.artvelix-home .hero h1{font-size:70px;letter-spacing:-3.5px}.artvelix-home .hero h1>span{letter-spacing:-3px}.artvelix-home .hero-art{min-height:440px}.artvelix-home .shops-grid{gap:16px}.artvelix-home .announcement{font-size:8px;padding-inline:24px}.artvelix-home .prototype-label{display:none}}
+@media(max-width:560px){.artvelix-home .header{padding:18px 22px}.artvelix-home .hero h1{font-size:66px}.artvelix-home .hero-description{font-size:15px}.artvelix-home .hero-art{min-height:390px;margin-top:7px}.artvelix-home .hero-actions{gap:20px;flex-wrap:wrap}.artvelix-home .hero-note{margin-top:24px}.artvelix-home .shops-grid{grid-template-columns:1fr}.artvelix-home .shop-image{aspect-ratio:1.2}.artvelix-home .shop-card>p{margin-bottom:15px}.artvelix-home .art-stamp{right:-6px;width:96px;height:96px}.artvelix-home .art-stamp strong{font-size:22px}.artvelix-home .footer-top .artvelix-brand{margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){.av-mark{transition:none}}

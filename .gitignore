@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.github/
+!.github/**
+!site/
+!site/**
+site/**/.DS_Store

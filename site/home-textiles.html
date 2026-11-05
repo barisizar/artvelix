@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battaniye & duş perdesi — Ev tekstili seçkisi | Artvelix</title>
+  <meta name="description" content="50 battaniye ve 50 duş perdesi tasarımı. Tamamı yazısız, gerçekçi ürün önizlemeleriyle yeni ev tekstili seçkisi.">
+  <link rel="stylesheet" href="home-textiles.css?v=1">
+  <script src="home-textiles.js?v=1" defer></script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/artvelix/favicon.svg">
+  <link rel="stylesheet" href="assets/artvelix/brand.css?v=artvelix-1">
+  <meta name="theme-color" content="#3032e8">
+  <meta name="application-name" content="Artvelix">
+  <meta property="og:site_name" content="Artvelix">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Battaniye &amp; duş perdesi — Ev tekstili seçkisi | Artvelix">
+  <meta property="og:description" content="50 battaniye ve 50 duş perdesi tasarımı. Tamamı yazısız, gerçekçi ürün önizlemeleriyle yeni ev tekstili seçkisi.">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand artvelix-brand" href="index.html" aria-label="Artvelix — Ana sayfa"><svg class="av-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M9 29 18.2 10h4L31 29h-5.6l-1.5-3.5h-9.4L13 29H9Zm7.3-7.7h5.8l-2.9-6.7-2.9 6.7Z" fill="#faf8f2"/><circle cx="30" cy="10" r="3" fill="#d8ee76"/></svg><span class="av-type"><span class="av-name">artvelix<span class="av-dot">.</span></span><small class="av-tagline">SANATLA, HER GÜN.</small></span></a>
+    <nav aria-label="Ana gezinme"><a href="all-products.html#collection">Tüm ürünler ↗</a><a href="puzzles.html#collection">Puzzle ↗</a><a href="notebooks.html#collection">Defterler ↗</a><a href="textile-half.html#collection">Yarım desen ↗</a><a href="tech.html#collection">Teknoloji ↗</a><a href="bags.html#collection">Çantalar ↗</a>
+      <a href="collection.html#collection">Diğer ürünler ↗</a>
+      <a href="wall-art.html#collection">Tuval & poster</a>
+      <a href="cases.html#collection">Telefon kılıfları</a>
+      <button id="favorites" class="pill" aria-pressed="false">Beğendiklerim <span id="fav-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">YAZISIZ TASARIMLAR / EV TEKSTİLİ</p>
+        <h1 id="page-title">Eve yayılan<br><em>biraz sanat.</em></h1>
+        <p class="lead">50 battaniye, 50 duş perdesi. Renkler, desenler ve hikâyeler kumaşla buluşuyor. Tasarımların tamamı yazısız; her biri bitmiş ürünün üzerinde.</p>
+        <a class="primary" href="#collection">Seçkiyi incele <span aria-hidden="true">↘</span></a>
+        <div class="stats" aria-label="Hazır ürün sayıları">
+          <div><strong><span id="blanket-total">0</span><small> / 50</small></strong><span>Battaniye hazır</span></div>
+          <div><strong><span id="curtain-total">0</span><small> / 50</small></strong><span>Duş perdesi hazır</span></div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <div class="hero-wait" id="hero-wait"><span>EV TEKSTİLİ</span><p>Desenler kumaşta<br><em>yerini alıyor.</em></p></div>
+        <img id="hero-image" alt="" width="1254" height="1254" hidden>
+        <figcaption id="hero-caption" hidden><span id="hero-title"></span><span>Ürün önizlemesi</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="ribbon"><span>50 battaniye + 50 duş perdesi. Tamamı yazısız.</span><span id="progress" role="status">Seçki yükleniyor…</span></div>
+
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="section-head">
+        <div><p class="eyebrow">DOKUSUYLA, RENGİYLE, DESENİYLE</p><h2 id="collection-title">Evin için yeni bir his.</h2></div>
+        <p>Battaniye ve duş perdelerini ayrı ayrı incele.<br>Beğendiklerini kalp ile bir araya getir.</p>
+      </div>
+      <div class="kind-tabs" role="group" aria-label="Ürün türü">
+        <button class="kind-tab active" data-kind="" aria-pressed="true"><strong>Tümü</strong><span id="all-count">0 / 100 hazır</span></button>
+        <button class="kind-tab" data-kind="blanket" aria-pressed="false"><strong>Battaniye</strong><span>Tamamı yazısız <i aria-hidden="true">·</i> <span id="blanket-count">0 / 50</span></span></button>
+        <button class="kind-tab" data-kind="curtain" aria-pressed="false"><strong>Duş perdesi</strong><span>Tamamı yazısız <i aria-hidden="true">·</i> <span id="curtain-count">0 / 50</span></span></button>
+      </div>
+      <div class="toolbar">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Bir tema veya tasarım ara…" aria-label="Tema veya tasarım ara"></label>
+        <select id="theme" aria-label="Tema seç"><option value="">Tüm temalar</option></select>
+        <button id="reset" hidden>Filtreleri temizle</button>
+      </div>
+      <div class="result"><span id="result-count" aria-live="polite">Tasarımlar yükleniyor…</span><span id="selection-note">50 BATTANİYE + 50 DUŞ PERDESİ</span></div>
+      <div id="grid" class="grid"></div>
+      <div class="empty" id="empty" hidden><h3 id="empty-title">Bu seçimde tasarım yok.</h3><p id="empty-copy">Filtreleri değiştirerek diğer tasarımlara göz atabilirsin.</p></div>
+      <p class="note">Bu seçki, tasarımların battaniye ve duş perdesi üzerindeki görünümünü değerlendirmek için hazırlanmıştır. Görseller gerçekçi AI ürün önizlemeleridir; boyut, kumaş ve baskı dosyası üretim aşamasında ayrıca kesinleştirilecek.</p>
+    </section>
+  </main>
+
+  <footer><span>ARTVELIX / EV TEKSTİLİ</span><a href="collection.html#collection">Diğer ürünleri incele ↗</a><a href="#">Başa dön ↑</a></footer>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <button class="close" id="close" aria-label="Ürün detayını kapat">×</button>
+    <div class="detail-photo"><img id="detail-image" alt="" width="1254" height="1254"></div>
+    <div class="detail-copy">
+      <p class="eyebrow" id="detail-id"></p>
+      <h2 id="detail-title"></h2>
+      <p class="detail-theme" id="detail-theme"></p>
+      <p id="detail-description"></p>
+      <span class="status">AI ile hazırlanmış ürün önizlemesi</span>
+      <button id="detail-fav" class="primary" aria-pressed="false">Bu tasarımı beğendim ♡</button>
+      <a class="download" id="download" download>Ürün görselini indir ↓</a>
+      <p class="review-note">Desenin yerleşimini, kumaş dokusunu ve ürünün evdeki görünümünü değerlendirebilirsin.</p>
+      <div class="detail-nav"><button id="prev" aria-label="Önceki tasarım">←</button><span id="position" aria-live="polite"></span><button id="next" aria-label="Sonraki tasarım">→</button></div>
+    </div>
+  </dialog>
+<p class="web-preview-note" style="margin:0;padding:18px 24px;text-align:center;font:12px/1.6 sans-serif;color:#686661;background:#f5f3ed">Artvelix · Tasarım galerisi. Görseller ve indirilebilir dosyalar web önizlemeleridir; baskı masterı değildir. Sipariş ve ödeme alınmaz.</p>
+</body>
+</html>

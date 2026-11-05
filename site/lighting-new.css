@@ -1,0 +1,5 @@
+/* Collection palette; native product images remain uncropped. */
+:root{--bg:#f7f2e9;--ink:#3f3328;--muted:#877665;--line:#e3d9c9;--rose:#9e693e;--panel:#eee1ce;--yellow:#ecd5ab}
+.hero-wait{background:#ecddc3;color:#714f31}.hero-wait:before{border-color:#c9aa7b;border-radius:50%;transform:rotate(-10deg)}.ribbon{color:#77502d}.group-tab:hover:not(.active){background:#eee1cc}.color-dots i:nth-child(1){background:#d7b98d}.color-dots i:nth-child(2){background:#b8c5ad}.color-dots i:nth-child(3){background:#d9a992}.toolbar{gap:15px}.toolbar select{max-width:230px}.card-colors{display:flex;gap:8px;align-items:center;font-size:10px;color:var(--muted);margin-top:6px}.card-colors>span+span:not(:empty):before{content:"·";margin-right:8px}.hero-photo figcaption{background:#fcf5e9ed}.status{background:#eee0c9}
+@media(min-width:1000px){.toolbar .search{min-width:250px;flex:2}.toolbar select{flex:1}}
+@media(max-width:600px){.toolbar select{flex-basis:42%;max-width:100%}.card-colors{display:block;font-size:9px}.card-colors>span{display:block}.card-colors>span+span:not(:empty):before{content:none}.card-colors>span+span{margin-top:2px}}

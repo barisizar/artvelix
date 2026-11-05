@@ -1,0 +1,5 @@
+/* Collection-specific palette; product images remain uncropped. */
+:root{--bg:#f5f6ef;--ink:#283c35;--muted:#6d7a6f;--line:#dce2d5;--rose:#55725b;--panel:#e8eddf;--yellow:#dfe7d6}
+.hero-wait{background:#dce7d5;color:#365541}.hero-wait:before{border-color:#a7bda2;border-radius:46% 54% 46% 54%;transform:rotate(-10deg)}.ribbon{color:#415c44}.group-tab:hover:not(.active){background:#e4ebdf}.color-dots i:nth-child(2){background:#a7adca}.color-dots i:nth-child(3){background:#dcc3aa}.toolbar{gap:15px}.toolbar select{max-width:210px}.card-colors{display:flex;gap:8px;align-items:center;font-size:10px;color:var(--muted);margin-top:6px}.card-colors>span+span:before{content:"·";margin-right:8px}.leg-note{font-size:10px;color:var(--muted);margin-top:8px}.hero-photo figcaption{background:#f9faf2ed}.status{background:#e0e9da}
+@media(min-width:1000px){.toolbar .search{min-width:220px;flex-basis:100%}.toolbar select{flex:1}}
+@media(max-width:600px){.toolbar select{flex-basis:42%;max-width:100%}.card-colors{display:block;font-size:9px}.card-colors>span{display:block}.card-colors>span+span:before{content:none}.card-colors>span+span{margin-top:2px}}
